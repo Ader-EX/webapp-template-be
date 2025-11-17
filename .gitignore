@@ -1,0 +1,12 @@
+venv/
+__pycache__
+.env
+env/
+qiu-backend.tar
+.env
+github-actions-key
+github-actions-key.pub
+local_uploads/
+uploads/
+qiu_system.db
+requirements.txt
