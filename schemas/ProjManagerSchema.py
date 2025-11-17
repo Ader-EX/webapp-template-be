@@ -6,6 +6,7 @@ class ProjectExperienceBase(BaseModel):
     customer_name: str
     project_name: str
     project_year: str
+    consulting_manager_id:int
     category: str
 
 
@@ -20,7 +21,5 @@ class ProjectExperienceUpdate(BaseModel):
 class ProjectExperienceResponse(ProjectExperienceBase):
     id: int
     consulting_manager_id: Optional[int]
-    created_by: str
-
     class Config:
         orm_mode = True

@@ -19,7 +19,6 @@ def create_experience(
 ):
     new_project = ProjectExperience(
         **data.dict(),
-        consulting_manager_id=None
     )
 
     db.add(new_project)

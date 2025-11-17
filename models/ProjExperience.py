@@ -8,7 +8,7 @@ class ProjectExperience(Base):
 
     id = Column(Integer, primary_key=True, index=True)
 
-    no_sales_order = Column(Integer, nullable=False)
+    no_sales_order = Column(String(200), nullable=False)
     customer_name = Column(String(200), nullable=False)
     project_name = Column(String(200), nullable=False)
     project_year = Column(String(4), nullable=False)
@@ -22,6 +22,4 @@ class ProjectExperience(Base):
     )
 
     
-    created_by = Column(String(150), nullable=False)
-
     consulting_manager = relationship("ConsultingManager")

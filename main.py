@@ -115,7 +115,7 @@ app.include_router(
     cons_manager_routes.router,
     prefix="/consulting-manager",
     tags=["Consulting Manager"],
-    dependencies=[Depends(verify_access_token)]
+    # dependencies=[Depends(verify_access_token)]
 )
 
 # Project Experience CRUD
@@ -123,5 +123,5 @@ app.include_router(
     proj_experience_routes.router,
     prefix="/project-experience",
     tags=["Project Experience"],
-    dependencies=[Depends(verify_access_token)]
+    # dependencies=[Depends(verify_access_token)]
 )
