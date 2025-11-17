@@ -16,7 +16,7 @@ from starlette.exceptions import HTTPException
 from schemas.PaginatedResponseSchemas import PaginatedResponse
 from schemas.UserSchemas import UserCreate, TokenSchema, RequestDetails
 from database import  get_db
-from utils import get_hashed_password, verify_password, create_access_token, create_refresh_token
+from backend.utils import get_hashed_password, verify_password, create_access_token, create_refresh_token
 from models.User import User
 
 router =APIRouter()
