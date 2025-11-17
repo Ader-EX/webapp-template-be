@@ -11,7 +11,6 @@ from dependencies import verify_access_token
 
 # Import ONLY the routes you need
 from routes import (
-    auth_routes,
     user_routes,
     cons_manager_routes,
     proj_experience_routes
@@ -98,9 +97,6 @@ app.add_middleware(
 # -----------------------------------------------------------
 # Public & Protected Routes
 # -----------------------------------------------------------
-
-# Authentication
-app.include_router(auth_routes.router, prefix="/auth", tags=["Authentication"])
 
 # User CRUD
 app.include_router(

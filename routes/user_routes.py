@@ -7,7 +7,7 @@ from schemas.UserSchemas import (
 )
 from models.User import User
 from database import get_db
-from backend.utils import (
+from utils import (
     get_hashed_password,
     verify_password,
     create_access_token,
